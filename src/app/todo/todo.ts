@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-todo',
-  imports: [],
-  templateUrl: './todo.html',
-  styleUrl: './todo.css'
-})
 export class Todo {
+  tasks: string[] = [];
+  newTask: string = '';
 
+  addTask() {
+    if (this.newTask.trim()) {
+      this.tasks.push(this.newTask.trim());
+      this.newTask = '';
+    }
+  }
+
+  removeTask(index: number) {
+    this.tasks.splice(index, 1);
+  }
 }
