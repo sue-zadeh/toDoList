@@ -1,3 +1,14 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-todo',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './todo.html',
+  styleUrl: './todo.css',
+})
 export class Todo {
   tasks: string[] = [];
   newTask: string = '';
