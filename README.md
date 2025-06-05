@@ -1,5 +1,13 @@
 # TodoApp - Angular CLI
 
+$ todo.ts → the component logic
+
+$ todo.html → the template
+
+$ todo.css → the styles
+
+$ todo.spec.ts → test file
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Development server
